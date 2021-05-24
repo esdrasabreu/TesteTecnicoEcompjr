@@ -7,6 +7,14 @@
             <div class="card">
                 <div class="card-header"><a href="{{url ('empresas/new')}}">Cadastrar Empresa Jr</a></div>
 
+                <form class="navbar-form navbar-left" role="search" action="{!! url('empresas/pesquisar') !!}" method="post">
+
+                    <div class="form-group">
+                      {!! csrf_field() !!}
+                      <input type="text" name="texto" class="form-control" placeholder="Pesquisar" style="width: 600px;">
+                
+                    </div>
+
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -24,7 +32,7 @@
                             <th scope="col">Federação</th>
                           </tr>
                         </thead>
-                    @foreach ( $empresas as $emp )
+                    @foreach ( $enterprises as $emp )
                     
                         <tbody>
                           <tr>

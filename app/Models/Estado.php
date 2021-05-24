@@ -8,12 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Estado extends Model
 {
     use HasFactory;
-    protected $table = 'estado';
-    protected $fillable = ['id','nome'];
 
     public function federacao()
     {
-        return $this->hasMany(App\Estado::class,'estado_id','id');
+        return $this->hasMany(pp\Federacao::class,'estado_id','id');
     }
     
 }

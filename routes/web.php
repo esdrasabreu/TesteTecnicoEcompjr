@@ -21,3 +21,11 @@ Route::group(['middleware'=> 'web'], function(){
 Route::get('/empresas', [App\Http\Controllers\EmpresasController::class, 'index']);
 Route::get('/empresas/new', [App\Http\Controllers\EmpresasController::class, 'new']);
 Route::post('/empresas/add', [App\Http\Controllers\EmpresasController::class, 'add']);
+
+Route::get('/welcome', [App\Http\Controllers\EcompjrController::class, 'index']);
+
+//Route::get('/pesquisar','ProdutosController@pesquisar');
+Route::get('/empresas/pesquisar', [App\Http\Controllers\EmpresasController::class, 'pesquisar']);
+Route::post('/empresas/pesquisar', [App\Http\Controllers\EmpresasController::class, 'pesquisar']);
+
+

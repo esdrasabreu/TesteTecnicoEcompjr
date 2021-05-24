@@ -16,6 +16,10 @@
 
                    <h1>Bem Vindo!</h1>
                    <a href="{{url ('empresas')}}">Lista de Empresas</a>
+                   <tr>
+                    <a href="{{url ('welcome')}}">Informações empresa jr</a>
+                   </tr>
+                   
                 </div>
             </div>
         </div>

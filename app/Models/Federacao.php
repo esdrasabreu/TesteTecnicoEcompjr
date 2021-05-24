@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Federacao extends Model
 {
     use HasFactory;
-    protected $table = 'federacao';
-    protected $fillable = ['id','nome','estado_id'];
+    protected $table = 'federations';
+    protected $fillable = ['id','nome', 'estado_id'];
 
     public function empresa()
     {

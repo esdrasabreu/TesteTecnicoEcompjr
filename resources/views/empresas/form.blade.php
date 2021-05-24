@@ -20,10 +20,9 @@
                           <input type="text" name="nome" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Federação:</label>
+                            <label class="form-label">Federação_id:</label>
                             <input type="text" name="federacao_id" class="form-control">
                           </div>
-                          
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
                       </form>
                 </div>
